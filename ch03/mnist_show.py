@@ -8,6 +8,7 @@ from PIL import Image
 
 def img_show(img):
     pil_img = Image.fromarray(np.uint8(img))
+    ## PIL用のデータオブジェクトに変換している
     pil_img.show()
 
 (x_train, t_train), (x_test, t_test) = load_mnist(flatten=True, normalize=False)
